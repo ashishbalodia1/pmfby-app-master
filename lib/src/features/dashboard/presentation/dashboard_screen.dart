@@ -722,6 +722,13 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     Colors.teal,
                     () => _showHelpDialog(),
                   ),
+                  _buildActionCard(
+                    AppStrings.get('dashboard', 'crop_classification', context.read<LanguageProvider>().currentLanguage),
+                    AppStrings.get('dashboard', 'crop_classification', 'en'),
+                    Icons.insights,
+                    Colors.deepPurple,
+                    () => context.push('/crop-classification'),
+                  ),
                 ]),
               ),
             ),

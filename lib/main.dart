@@ -39,6 +39,7 @@ import 'src/features/satellite/enhanced_satellite_screen.dart';
 import 'src/features/pmfby_info/pmfby_info_screen.dart';
 import 'src/features/batch_upload/enhanced_batch_upload_screen.dart';
 import 'src/features/settings/language_settings_screen.dart';
+import 'src/features/crop_classification/crop_classification_screen.dart';
 import 'src/theme/app_themes.dart';
 import 'src/localization/app_localizations.dart';
 
@@ -305,6 +306,12 @@ GoRouter _buildRouter(BuildContext context) {
       GoRoute(
         path: '/language-settings',
         builder: (_, __) => const LanguageSettingsScreen(),
+      ),
+
+      // CROP CLASSIFICATION
+      GoRoute(
+        path: '/crop-classification',
+        builder: (_, __) => const CropClassificationScreen(),
       ),
 
       // COMPLAINTS
